@@ -1,0 +1,67 @@
+:root {
+  --card-offset: 20px
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  padding: 20px;
+  background-color: #1b1b1b;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.draggable {
+  display: flex;
+}
+
+.draggable__item {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid salmon;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.draggable__item:not(:last-child) {
+  margin-right: var(--card-offset);
+}
+
+.draggable__img {
+  max-width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1.5;
+  object-fit: cover;
+}
+
